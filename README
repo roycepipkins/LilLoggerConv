@@ -1,0 +1,6 @@
+Name: LilLoggerConv
+Purpose: Converts uLog hex samples to decimal integers for convenient graphing in a spreadsheet program.
+
+Expects, as the 1st command line argument, the file name of a text capture file from a read session with SparkFun's "uLog - The Lil'est Logger". The program expects that the capture file will begin with the letter "r" and that subsequent data will be the samples dumped from the logger. Essentially, after you recieve the "?" prompt from the uLog you should begin your text capture and send the r character to uLog. Once the uLog has finished dumping its samples you should end the capture and save the file so that you can pass it to LilLoggerConv. 
+
+The program will append ".conv" to the sample file name and will create a new file with the appended name. So, it should appear in the same directory as the input file. It will place all the samples, in decimal, in that file seperated by tabs. It will also insert x, y and z as the first line so that most spreadsheet programs will interpret the inserted line as column headings for the purpose of charting.
